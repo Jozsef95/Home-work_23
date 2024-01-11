@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(212, 211, 211);
+}
+
+h1 {
+    margin-left: 45px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.positions {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+.button {
+    margin-left: 250px;
+    margin-bottom: 25px;
+}

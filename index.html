@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+    <div class="positions">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+    </div>
+    <div class="positions">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+    </div>
+        <div class="positions">
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD" required><br>
+    </div>
+        <div class="positions">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+    
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+        <div class="positions">
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="lviv">Uzshorod</option>
+            <option value="kyiv">Kyiv</option>
+            <option value="odessa">Odessa</option>
+            <option value="odessa">Lviv</option>
+            <option value="odessa">Ismail</option>
+        </select>
+    </div>
+    <div class="positions">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="1" cols="40"></textarea><br>
+    </div>
+    <div class="positions">
+        <label>Languages:</label>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">Ukraine</label>
+        <input type="checkbox" id="spanish" name="languages" value="spanish">
+        <label for="spanish">English</label>
+        <input type="checkbox" id="french" name="languages" value="french">
+        <label for="french">Hungary</label><br>
+    </div>
+    <div class="button">
+
+        <button type="button" onclick="displayData()">Зберегти</button>
+    </form>
+</div>
+    <div id="userData"></div>
+</body>
+</html>
